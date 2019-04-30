@@ -1,0 +1,24 @@
+{
+  "name": "craft-beer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start_server": "node_modules/.bin/live-server ./src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IanMFraser/CSc59969_Beer_Visualizations.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IanMFraser/CSc59969_Beer_Visualizations/issues"
+  },
+  "homepage": "https://github.com/IanMFraser/CSc59969_Beer_Visualizations#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
