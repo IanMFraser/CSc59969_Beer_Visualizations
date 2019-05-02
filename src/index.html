@@ -22,45 +22,56 @@
     <script src="lib/jquery/jquery.min.js"></script>
     <!-- <script src="scripts/test.js"></script> -->
     <div>
-    <h2>Brewery Count By State 1984-2017.</h2>
-    <p>For this visualization, we used the Brewery Count By State (1984 - March 31, 2017)
-       dataset found on data.gov from the Alcohol and Tobacco Tax and Trade Bureau. 
-       As described in the title, this dataset lists the number of breweries per state 
-       in the United States from 1984 to early 2017. </p>
-    <p>The reason we wanted to visualize this dataset was because of how clearly it
-       helps to show the growth of the craft beer industry in such a short amount of
+      <h2>Brewery Count By State 1984-2017.</h2>
+      <p>
+        For this visualization, we used the Brewery Count By State (1984 - March 31, 2017)
+        dataset found on data.gov from the Alcohol and Tobacco Tax and Trade Bureau. 
+        As described in the title, this dataset lists the number of breweries per state 
+        in the United States from 1984 to early 2017. 
+      </p>
+      <p>
+        The reason we wanted to visualize this dataset was because of how clearly it
+        helps to show the growth of the craft beer industry in such a short amount of
         time. In 1984, there was only 5 states in the US that were manufacturing beer; 
         Pennsylvania, Wisconsin, Texas, California and Washington. This was a total of 
         26 breweries producing for the whole country. Only ten years later, all but 8 
         states have started producing beer. By 1999, every state had at least 3 breweries, 
-        and in some cases, some states had several hundred.</p>
-    <p>To make this visualization, we chose a D3 template found on the D3 website in 
-      the Maps examples. This was a fairly straight forward example that takes a CSV 
-      file as input, where each column is a list of some value per year. In the example 
-      dataset they used population per state per year. We didn’t feel that we needed 
-      anything too complex for this vis, we just wanted to show the growth per state 
-      per year. As production grows, the color of the state becomes darker, so it’s 
-      clear to the user which state has a larger production value. </p>
-    <p>The original dataset from data.gov did need to be cleaned up a little bit in 
-      order to use it in this dataset. The main thing we needed to clean up was 
-      dropping a row that listed “other” US territories as these weren’t included in 
-      the map. There was also a row that listed total brewery count per year, which 
-      we didn’t think was necessary for the vis.  Finally, the original datasets 
-      used State abbreviations, and our vis required full state names listed in 
-      alphabetical order, so some rearranging of the rows was needed for the data 
-      to be properly formatted into the map. </p>
-      <p>Once we were able to get the data properly formatted and loaded into our 
+        and in some cases, some states had several hundred.
+      </p>
+      <p>
+        To make this visualization, we chose a D3 template found on the D3 website in 
+        the Maps examples. This was a fairly straight forward example that takes a CSV 
+        file as input, where each column is a list of some value per year. In the example 
+        dataset they used population per state per year. We didn’t feel that we needed 
+        anything too complex for this vis, we just wanted to show the growth per state 
+        per year. As production grows, the color of the state becomes darker, so it’s 
+        clear to the user which state has a larger production value. 
+      </p>
+      <p>
+        The original dataset from data.gov did need to be cleaned up a little bit in 
+        order to use it in this dataset. The main thing we needed to clean up was 
+        dropping a row that listed “other” US territories as these weren’t included in 
+        the map. There was also a row that listed total brewery count per year, which 
+        we didn’t think was necessary for the vis.  Finally, the original datasets 
+        used State abbreviations, and our vis required full state names listed in 
+        alphabetical order, so some rearranging of the rows was needed for the data 
+        to be properly formatted into the map. 
+      </p>
+      <p>
+        Once we were able to get the data properly formatted and loaded into our 
         visualization, we stripped apart the d3 code, so that we could properly 
         display the number of breweries per state when the user mouses over the 
         state. This way, if the color of the state isn’t clear to how much 
         production was made, they could see a specific value associated with that 
-        state.</p>
-      <p>Finally, the color palate we decided to use for the map is based off of SRM 
+        state.
+      </p>
+      <p>
+        Finally, the color palate we decided to use for the map is based off of SRM 
         values, which is the measurement of color in beer. Although beer can range form
         a pale yellow to nearly black in color, we decided to use the first 10 SRM values,
         which is pale yellow (SRM value of 1, usually your light commercial beers like 
         Budweiser) to a pale amber (SRM value of 10, which is equivalent to a German 
-        Octoberfest Bier).
+        Oktoberfest Bier).
       </p>
     </div>
     <script src="scripts/map.js"></script>
