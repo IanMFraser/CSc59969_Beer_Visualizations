@@ -6,3 +6,7 @@ body {
   position: center;
   text-align: center;
 }
+
+p {
+  text-align: left;
+}
