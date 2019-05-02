@@ -1,7 +1,7 @@
 // US map showing brewery count per state between 1984 and 2017
 
 d3.csv("../data/brewery_count_by_state_1984_2017.csv", function(err, data) {
-    let config = {"color1":"#d3e5ff","color2":"#08306B","stateDataColumn":"state","defaultValue":"1984","state":"state"};
+    let config = {"color1":"#FFE699","color2":"#DE7C00","stateDataColumn":"state","defaultValue":"1984","state":"state"};
     const WIDTH = 800,
           HEIGHT = 500,
           COLOR_COUNTS = 9,
