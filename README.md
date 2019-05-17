@@ -1,13 +1,3 @@
 # Craft Beer Visualization Project
 
-
-## Getting Started
-
-To run this project, you must have ```node.js``` and ```npm``` installed in your computer. Clone this repo and execute the following commands in the project's root directory:
-
-```bash
-npm install
-npm run start_server
-``` 
-
-This will launch a server accessible throught ```localhost:8080```.
+A simple visualization showing the growth of craft beer in the United States from 1984 to 2017. The dataset for this visualization was taking from [data.gov](https://catalog.data.gov/dataset/brewery-count-by-state-1984-march-31-2017). The visualization was created using D3 for my Vizualization course at City College of New York. 
